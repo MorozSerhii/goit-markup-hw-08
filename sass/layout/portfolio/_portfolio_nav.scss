@@ -2,16 +2,22 @@
 .filter{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
   &--portfolio-pos{
     margin-bottom: 50px;
+    @media screen and(min-width:768px) and (max-width:1199px) {
+      margin-bottom: 30px; 
+    }
+    @media screen and(max-width: 767px){
+      margin-bottom: 40px;
+      justify-content: flex-start;
+
+    }
   } 
   }
 
-  .filter__item{
-    &:nth-child(-n+4){
-      margin-right: 8px;
-    }
-  }
+ 
   .filter__button {
     padding: 6px 22px 6px 22px;
     font-weight: 500;

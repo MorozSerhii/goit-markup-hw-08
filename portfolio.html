@@ -25,38 +25,63 @@
             <a class="logo logo--header-position" href="./index.html"
               >Web<span class="logo__part logo__part--dark">Studio</span>
             </a>
-            <button class="menu__btn" type="button" aria-expanded="false" data-menu-button>
+            <div class="burger-menu" data-menu-button>
+              <span class="burger-menu__item">
+              </span>
+            </div>
+            <!-- <button class="menu__btn" type="button" aria-expanded="false" data-menu-button>
               <svg class="menu__btn-ico" width="40" height="40" aria-label="перемикач мобільного меню">
                 <use class="menu__btn-cross" href="./images/icons.svg#close"></use>
                 <use class="menu__btn-menu" href="./images/icons.svg#menu"></use>
               </svg>
-            </button>
+            </button> -->
           </div>
 
-          <div class="menu " data-menu>
+          <div class="menu" data-menu>
             <ul class="list">
-              <li class="mobile-menu__item ">
-                <a class="mobile-menu__link links c" href="./index.html">Студія</a>
-              </li>
-              <li class="mobile-menu__item ">
-                <a class="mobile-menu__link links current line" href="./portfolio.html">Портфоліо</a>
-              </li>
-              
-              <li class="mobile-menu__item mobile-menu__item--pos"><a class="mobile-menu__link links" href="#">Контакти</a></li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__tel  links" href="tel:+380961111111">+380961111111</a>
+                <a class="mobile-menu__link links current line line-mob-link" href="./index.html"
+                  >Студія</a
+                >
               </li>
-              <li class="mobile-menu__item mobile-menu__mail--pos">
-                <a class="mobile-menu__mail  links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link links line-mob-link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+
+              <li class="mobile-menu__item mobile-menu__item--pos">
+                <a class="mobile-menu__link links line-mob-link" href="#">Контакти</a>
               </li>
             </ul>
             <div>
-              <ul class="mob-soc list">
-                <li class="mob-soc__item"><a class="mob-soc__link links" href="#">Instagram</a></li>
-                <li class="mob-soc__item"><a class="mob-soc__link links mob-soc__item--line" href="#">Twitter</a></li>
-                <li class="mob-soc__item"><a class="mob-soc__link links mob-soc__item--line" href="#">Facebook</a></li>
-                <li class="mob-soc__item"><a class="mob-soc__link links mob-soc__item--line" href="#">LinkedIn</a></li>
+              <ul class="list">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__tel links" href="tel:+380961111111">+380961111111</a>
+                </li>
+
+                <li class="mobile-menu__item mobile-menu__mail--pos">
+                  <a class="mobile-menu__mail links" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
               </ul>
+              <div>
+                <ul class="mob-soc list">
+                  <li class="mob-soc__item">
+                    <a class="mob-soc__link links" href="#">Instagram</a>
+                  </li>
+                  <li class="mob-soc__item">
+                    <a class="mob-soc__link links mob-soc__item--line" href="#">Twitter</a>
+                  </li>
+                  <li class="mob-soc__item">
+                    <a class="mob-soc__link links mob-soc__item--line" href="#">Facebook</a>
+                  </li>
+                  <li class="mob-soc__item">
+                    <a class="mob-soc__link links mob-soc__item--line" href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -67,10 +92,10 @@
             </a>
             <ul class="menu-list menu-list__nav menu-list__nav--left list">
               <li class="menu__item">
-                <a class="menu__link links " href="./index.html">Студія</a>
+                <a class="menu__link links current line" href="./index.html">Студія</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link links current line" href="./portfolio.html">Портфоліо</a>
+                <a class="menu__link links" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link links" href="">Контакти</a>

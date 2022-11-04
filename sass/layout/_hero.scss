@@ -1,22 +1,38 @@
 
   .hero {
-    background-color:&--background-hero-color;
     text-align: center;
     padding: 118px 0;
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: $bg-gradient,
      url(../images/mobile-hero.jpg);
       
-        
+    @media screen and (min-width:320px){
+      @include retina {
+        background-image: $bg-gradient, url(../images/mobile-hero2x.jpg)
+      }
+      
+    }
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and(min-width:1200px) {
+    @include tablet { background-image: $bg-gradient,
+      url(../images/bg-tabl-hero.jpg);
+      @include retina {
+        background-image: $bg-gradient, url(../images/bg-tabl-hero-x2.jpg)
+      }
+    }
+
+    @include desktop {
       padding: 200px 0;
+      background-image: $bg-gradient,
+     url(../images/bg-desk-hero.jpg);
+     @include retina {
+      background-image: $bg-gradient, url(../images/bg-desk-herox2.jpg)
+    }
       }
   }
   

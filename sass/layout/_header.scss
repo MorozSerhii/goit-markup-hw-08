@@ -382,3 +382,61 @@
 
   }
 }
+
+.burger-menu.is-open::before{
+  transform: rotate(45deg);
+  top: 6.9px;
+}
+.burger-menu.is-open::after{
+  transform: rotate(-45deg);
+  bottom: 6.9px;
+}
+
+.burger-menu.is-open .burger-menu__item{
+  transform: scale(0);
+}
+.burger-menu {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 25;
+}
+.burger-menu::before, 
+.burger-menu::after{
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 500ms ease;
+  margin: 4px 0px;
+} 
+.burger-menu::before{
+  top: 0;
+  
+}
+.burger-menu::after{
+  bottom: 0;
+}
+
+
+.burger-menu__item {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 10.5px;
+  // top:9px;
+  transition: all 200ms ease;
+}
+
+.burger-menu:hover,.burger-menu:focus{
+&::after,
+&::before{
+  background-color: $--accent-text-color;
+}}
+.burger-menu:hover .burger-menu__item{
+  background-color: $--accent-text-color;
+}

@@ -352,19 +352,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  
 }
 
 .mob-soc__item--line::before {
-  content: " ";
+  content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+  background-color: rgba(33, 33, 33, 0.2);
+  height: 1px;
   width: 22px;
+  transform: rotate(90deg);
   margin-right: 10px;
 }
 
 
 
 .mob-soc__link {
+
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22/18);
@@ -378,7 +382,7 @@
 
   }
   @media screen and (min-width:390px) and (max-width:442px) {
-    font-size: 14px;
+    font-size: 12px;
 
   }
 }
@@ -403,7 +407,6 @@
 }
 .burger-menu::before, 
 .burger-menu::after{
-  z-index: 20;
   content: "";
   background-color: black;
   position: absolute;

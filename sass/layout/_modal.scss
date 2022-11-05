@@ -21,8 +21,8 @@
     width: 528px;
     height: 581px;
   }
-  @media screen and(min-width:450px) and (max-width:767px){
-    min-width: 450px;
+  @media screen and(min-width:450px) and (max-width:1199px){
+   width: 450px;
     min-height: 609px;  
   }
   @media screen and (max-width:449px){
@@ -50,7 +50,6 @@ height: 609px;
 
 .modal__close-btn {
   display: flex;
-  z-index: 28;
   align-items: center;
   justify-content: center;
   width: 30px;
@@ -59,6 +58,7 @@ height: 609px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: inherit;
   position: absolute;
+  fill: black;
   top: 8px;
   right: 8px;
 
@@ -68,13 +68,13 @@ height: 609px;
   &:focus {
     border: 1px dashed $--accent-button-color;
     color: $--accent-button-color;
-    transform: rotate(-300deg) scale(1.3);
+    transform: rotate(-300deg) scale(1.2);
   }
 }
 
 .modal-close__icon {
   fill: currentColor;
-  z-index: 29;
+  
 }
 
 

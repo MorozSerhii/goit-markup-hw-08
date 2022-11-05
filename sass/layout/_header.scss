@@ -403,6 +403,7 @@
 }
 .burger-menu::before, 
 .burger-menu::after{
+  z-index: 20;
   content: "";
   background-color: black;
   position: absolute;

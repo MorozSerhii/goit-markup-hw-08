@@ -533,6 +533,7 @@ body {
 
 .burger-menu::before,
 .burger-menu::after {
+  z-index: 20;
   content: "";
   background-color: black;
   position: absolute;
@@ -1447,6 +1448,7 @@ body {
 
 .modal-close__icon {
   fill: currentColor;
+  z-index: 29;
 }
 
 .form__title {

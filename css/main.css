@@ -78,6 +78,14 @@ body {
   overflow: hidden;
 }
 
+.body-scroll {
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -148,7 +156,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo--header-position {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
   }
 }
 
@@ -568,7 +576,9 @@ body {
   transition: transform 500ms ease, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms ease;
 }
 
-.burger-menu:hover::after, .burger-menu:hover::before, .burger-menu:focus::after, .burger-menu:focus::before {
+.burger-menu:hover::after, .burger-menu:hover::before,
+.burger-menu:focus::after,
+.burger-menu:focus::before {
   background-color: #2196f3;
 }
 

@@ -50,6 +50,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
+  
+    
   }
   .section {
     padding-top: 60px;
@@ -76,3 +78,13 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+
+  .body-scroll{
+    overflow: hidden;
+  }
+
+  .no-scroll{
+    overflow: hidden;
+  }
+  

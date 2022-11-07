@@ -1,6 +1,6 @@
 
-.activity{
-  @media screen and (max-width:1199px){
+
+   .activity-wraperr-desktop{ @media screen  and (max-width:1199px){
     padding-bottom: 94px;  
     position: absolute;
     width: 1px;
@@ -11,10 +11,7 @@
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-   
-
+    overflow: hidden;}
   }
   
   .title {
@@ -54,3 +51,16 @@
     bottom:0;
    
   }
+
+  .swiper{
+    
+    max-width: 320px;
+    height: 294px;
+  }
+ .swiper-section{
+  display: none;
+  @media screen and(max-width:767px) {
+    display: block;
+    
+  }
+ }

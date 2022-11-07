@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -28,8 +29,7 @@
               >Web<span class="logo__part logo__part--dark">Studio</span>
             </a>
             <div class="burger-menu" data-menu-button>
-              <span class="burger-menu__item">
-              </span>
+              <span class="burger-menu__item"> </span>
             </div>
           </div>
 
@@ -126,6 +126,7 @@
           </button>
         </div>
       </section>
+      
       <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
@@ -159,27 +160,57 @@
       </section>
       <section class="activity">
         <div class="container">
-          <h2 class="title">Чим ми займаємося</h2>
-          <ul class="pictures list">
-            <li class="pictures__item">
-              <div class="pictures__wraper">
-                <img src="./images/img1.jpg" width="370" height="294" alt="створення сайтів" />
-                <p class="pictures__text">Десктопні додатки</p>
-              </div>
-            </li>
-            <li class="pictures__item">
-              <div class="pictures__wraper">
-                <img src="./images/img2.jpg" width="370" height="294" alt="адаптація сайті" />
-                <p class="pictures__text">Мобільні додатки</p>
-              </div>
-            </li>
-            <li class="pictures__item">
-              <div class="pictures__wraper">
-                <img src="./images/img3.jpg" width="370" height="294" alt="дизайн сайтів" />
-                <p class="pictures__text">Дизайнерські рішення</p>
-              </div>
-            </li>
-          </ul>
+          <div class="swiper-section">
+            <h2 class="title">Чим ми займаємося</h2>
+            <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><div class="pictures__wraper">
+      <img src="./images/img1.jpg" width="370" height="294" alt="створення сайтів" />
+      <p class="pictures__text">Десктопні додатки</p>
+    </div></div>
+    <div class="swiper-slide"><div class="pictures__wraper">
+      <img src="./images/img2.jpg" width="370" height="294" alt="адаптація сайті" />
+      <p class="pictures__text">Мобільні додатки</p>
+    </div></div>
+    <div class="swiper-slide"><div class="pictures__wraper">
+      <img src="./images/img3.jpg" width="370" height="294" alt="дизайн сайтів" />
+      <p class="pictures__text">Дизайнерські рішення</p>
+    </div></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div></div>
+          
+</div>
+<div class="activity-wraperr-desktop"><h2 class="title">Чим ми займаємося</h2>
+  <ul class="pictures list">
+    <li class="pictures__item">
+      <div class="pictures__wraper">
+        <img src="./images/img1.jpg" width="370" height="294" alt="створення сайтів" />
+        <p class="pictures__text">Десктопні додатки</p>
+      </div>
+    </li>
+    <li class="pictures__item">
+      <div class="pictures__wraper">
+        <img src="./images/img2.jpg" width="370" height="294" alt="адаптація сайті" />
+        <p class="pictures__text">Мобільні додатки</p>
+      </div>
+    </li>
+    <li class="pictures__item">
+      <div class="pictures__wraper">
+        <img src="./images/img3.jpg" width="370" height="294" alt="дизайн сайтів" />
+        <p class="pictures__text">Дизайнерські рішення</p>
+      </div>
+    </li>
+  </ul></div>
+          
         </div>
       </section>
       <section class="team section">
@@ -188,28 +219,20 @@
           <ul class="card list">
             <li class="card__item">
               <picture>
-                
                 <source
-                  srcset="./images/1-pic-desk.jpg 1x,
-                  ./images/1-pic-deskx2.jpg 2x "
+                  srcset="./images/1-pic-desk.jpg 1x, ./images/1-pic-deskx2.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                  ./images/1-pic-tab.jpg 1x,
-                  ./images/1-pic-tabx2.jpg 2x
-                  "
+                  srcset="./images/1-pic-tab.jpg 1x, ./images/1-pic-tabx2.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="
-                  ./images/1-pic-mob.jpg 1x,
-                  ./images/1-pic-mobx2.jpg 2x
-                  "
+                  srcset="./images/1-pic-mob.jpg 1x, ./images/1-pic-mobx2.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./images/1-pic-mob.jpg" width="450"  alt="Product Designer" />
-              </picture>             
+                <img src="./images/1-pic-mob.jpg" width="450" alt="Product Designer" />
+              </picture>
               <div class="card__wraper">
                 <h3 class="card__name">Ігор Дем'яненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -247,29 +270,21 @@
             </li>
             <li class="card__item">
               <picture>
-                
                 <source
-                  srcset="./images/2-pic-desk.jpg 1x,
-                  ./images/2-pic-deskx2.jpg 2x "
+                  srcset="./images/2-pic-desk.jpg 1x, ./images/2-pic-deskx2.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                  ./images/2-pic-tab.jpg 1x,
-                  ./images/2-pic-tabx2.jpg 2x
-                  "
+                  srcset="./images/2-pic-tab.jpg 1x, ./images/2-pic-tabx2.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="
-                  ./images/2-pic-mob.jpg 1x,
-                  ./images/2-pic-mobx2.jpg 2x
-                  "
+                  srcset="./images/2-pic-mob.jpg 1x, ./images/2-pic-mobx2.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./images/2-pic-mob.jpg" width="450"  alt="Product Designer" />
-              </picture> 
-             
+                <img src="./images/2-pic-mob.jpg" width="450" alt="Product Designer" />
+              </picture>
+
               <div class="card__wraper">
                 <h3 class="card__name">Ольга Рєпіна</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -308,26 +323,19 @@
             <li class="card__item">
               <picture>
                 <source
-                  srcset="./images/3-pic-desk.jpg 1x,
-                  ./images/3-pic-deskx2.jpg 2x "
+                  srcset="./images/3-pic-desk.jpg 1x, ./images/3-pic-deskx2.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                  ./images/3-pic-tab.jpg 1x,
-                  ./images/3-pic-tabx2.jpg 2x
-                  "
+                  srcset="./images/3-pic-tab.jpg 1x, ./images/3-pic-tabx2.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="
-                  ./images/3-pic-mob.jpg 1x,
-                  ./images/3-pic-mobx2.jpg 2x
-                  "
+                  srcset="./images/3-pic-mob.jpg 1x, ./images/3-pic-mobx2.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./images/3-pic-mob.jpg" width="450"  alt="Product Designer" />
-              </picture> 
+                <img src="./images/3-pic-mob.jpg" width="450" alt="Product Designer" />
+              </picture>
               <div class="card__wraper">
                 <h3 class="card__name">Микола Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -366,26 +374,19 @@
             <li class="card__item">
               <picture>
                 <source
-                  srcset="./images/4-pic-desk.jpg 1x,
-                  ./images/4-pic-deskx2.jpg 2x "
+                  srcset="./images/4-pic-desk.jpg 1x, ./images/4-pic-deskx2.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                  ./images/4-pic-tab.jpg 1x,
-                  ./images/4-pic-tabx2.jpg 2x
-                  "
+                  srcset="./images/4-pic-tab.jpg 1x, ./images/4-pic-tabx2.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="
-                  ./images/4-pic-mob.jpg 1x,
-                  ./images/4-pic-mobx2.jpg 2x
-                  "
+                  srcset="./images/4-pic-mob.jpg 1x, ./images/4-pic-mobx2.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./images/4-pic-mob.jpg" width="450"  alt="Product Designer" />
-              </picture> 
+                <img src="./images/4-pic-mob.jpg" width="450" alt="Product Designer" />
+              </picture>
               <div class="card__wraper">
                 <h3 class="card__name">Михайло Єрмаков</h3>
                 <p class="card__text">UI Designer</p>
@@ -473,66 +474,67 @@
       <div class="container footer__wraper">
         <div class="tablet-container">
           <div class="footer--mob-pos-elements element">
-          <a class="logo logo--footer-position" href="./index.html"
-            >Web<span class="logo__part logo__part--light">Studio</span>
-          </a>
-          <address>
-            <ul class="address list">
-              <li class="address__item">
-                <a
-                  class="address_link"
-                  href="https://goo.gl/maps/MqjciJjwHdjQ37CT9"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >м.Київ, пр-т Лесі Українки, 26</a
-                >
+            <a class="logo logo--footer-position" href="./index.html"
+              >Web<span class="logo__part logo__part--light">Studio</span>
+            </a>
+            <address>
+              <ul class="address list">
+                <li class="address__item">
+                  <a
+                    class="address_link"
+                    href="https://goo.gl/maps/MqjciJjwHdjQ37CT9"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >м.Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__item-contacts links" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__item-contacts links" href="tel:+380961111111">+380961111111</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-social element footer--mob-pos-elements">
+            <p class="footer-social__text">приєднуйтесь</p>
+            <ul class="social list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__item-contacts links" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__item-contacts links" href="tel:+380961111111">+380961111111</a>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <div class="footer-social element footer--mob-pos-elements">
-          <p class="footer-social__text">приєднуйтесь</p>
-          <ul class="social list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div></div>
-        
         <div class="footer-form-wraper element">
           <p class="footer-social__text">Підпишіться на розсилку</p>
           <form class="subscribe element">
@@ -560,10 +562,9 @@
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal__close-btn " type="button" data-modal-close>
+        <button class="modal__close-btn" type="button" data-modal-close>
           <svg class="modal-close__icon" width="18" height="18">
-            <use class="modal-close__icon-use"href="./images/icons.svg#modal-cross">  
-            </use>
+            <use class="modal-close__icon-use" href="./images/icons.svg#modal-cross"></use>
           </svg>
         </button>
         <form class="form" name="signup" autocomplete="on">
@@ -636,10 +637,12 @@
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-slider.js"></script>
   </body>
 </html>

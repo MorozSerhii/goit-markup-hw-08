@@ -7,10 +7,14 @@
   .benefits-list__item {
    
      @media screen and (min-width:768px) {
-      width: calc((100% - 30px)/3); 
+      width: calc((100% - 30px)/2); 
+
      }
      @media screen and (min-width:1200px){
       width: calc((100% - 90px)/4);  
+    }
+    @media screen and(max-width:767px) {
+      text-align: center;
     }
     &::before{
       display: block;

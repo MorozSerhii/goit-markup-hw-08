@@ -39,7 +39,7 @@
   
   .hero__title {
     margin: 0 auto 30px auto;
-    max-width: 696px;
+    max-width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height:calc(42/26);
@@ -51,6 +51,7 @@
     @media screen and(min-width:1200px) {
     font-size: 44px;
     line-height:calc(60/44);
+    max-width: 696px;
     }
 
   }

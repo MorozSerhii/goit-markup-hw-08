@@ -1,5 +1,17 @@
+.activity{
+  @media screen and (min-width:768px) and (max-width:1199px){
+    display: none;
+    
+    
+  }
+}
+.activity.section{
 
+  @include desktop{
+    padding-top: 0;
+  }
 
+}
    .activity-wraperr-desktop{ @media screen  and (max-width:1199px){
     padding-bottom: 94px;  
     position: absolute;
